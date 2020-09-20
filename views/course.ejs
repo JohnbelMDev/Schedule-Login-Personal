@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+        <a href="/profile" class="btn btn-default btn-sm">Course List and email </a>
+
+    </div>
+    <!-- looping throught the showclass enitity -->
+    <!-- using the ejs template to loop through -->
+        <%  for (var i=0; i<showclass.length; i++){ %>
+           <li><%=showclass[i].name%></li>
+          <li><%=showclass[i].class%></li>
+         <!-- <button type="button" id="deletebutton" name="button">Delete</button> -->
+         <%}%>
+
+
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->
+        <div class="col-sm-6">
+            <div class="well">
+                <h3><span class="fa fa-user"></span> List of classes</h3>
+
+
+            </div>
+        </div>
+        <div class="col-sm-6">
+          <h3>Classes</h3>
+
+
+
+
+
+        </ul>
+
+        </div>
+
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>

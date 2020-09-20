@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+ <!-- <form class="" action="index.html" method="post"> -->
+  <section class="resultPage">
+
+      <% for (var i=0;i< resultpropertie.length; i++){%>
+        <!-- <form class="" action="deleteAction" method="post"> -->
+            <!-- <input type="text" name="deleteInput" value="<%=resultpropertie[i]._id%>"> -->
+            <li>workhours:<%=resultpropertie[i].workhours%>hours</li>
+            <li>freetimeHours<%=resultpropertie[i].freetimeHours%></li>
+            <li>Date<%=resultpropertie[i].date%></li>
+            <button class="deleteButton"type="submit" value="<%=resultpropertie[i]._id%>" name="button">Delete</button>
+          <!-- </form> -->
+
+      <%}%>
+
+        </section>
+
+<script type="text/javascript" src="delete.js"></script>
+  </body>
+</html>
